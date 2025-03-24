@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+<title>mi primera web </title>
+<body>
+<h1>Lengua-2Bachillerato</h1>
+<p>Explora los temas de la asignatura</p>
+<input type="text" id="searchBox" placeholder="Buscar en los temas ..."onkeyup="searchText()">
+<p>Palabras encontradas: <span id="searchCount">0</span> </p>
+<div class="tema">
+    <button onclick="toggle('tema1')"><i class="fas fa-brain"></i> Bloque1</button>
+    <div id="tema1" class="contenido">
+    <ul>
+    <li>Sintaxis</li> 
+    <li>Transformaciones gramaticales</li>
+    <li>La poesía del grupo poético del 27</li>
+    </ul>
+    </div>
+</div>
+
+
+    
+  
+<div class="tema">
+    <button onclick="toggle('tema2')"><i class="fas fa-brain"></i> Bloque2</button>
+    <div id="tema2" class="contenido">
+    <ul>
+    <li>Mecanismos de formación de palabras</li>
+    <li>Definición de palabras y expresiones</li>
+    <li>La poesía desde 1939 a los años 70</li>
+    </ul>
+    </div></div>
+      <div class="tema">
+    <button onclick="toggle('tema3')"><i class="fas fa-brain"></i> Bloque3</button>
+    <div id="tema3" class="contenido">
+    <ul>
+    <li>La novela desde 1975 hasta nuestros días</li>
+    <li>El teatro desde 1939 hasta nuestros días</li>
+    <li>La poesía desde los años 70 a nuestros días</li>
+    </ul>
+    
+</div></div>
+<div></div>
+<p>Criterios de evaluación</p>
+<table>
+    
+</table>
+
+
+
+
+
+    <script>
+        function toggle(id) {
+          var contenido = document.getElementById(id);
+          contenido.style.display = (contenido.style.display === "block") ? "none" : "block";
+      }
+      </script>
+
+</body>
